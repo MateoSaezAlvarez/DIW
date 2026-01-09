@@ -1,0 +1,991 @@
+.compra-online {
+  background-color: #ffffff;
+  width: 100%;
+  min-width: 1440px;
+  min-height: 1024px;
+  position: relative;
+}
+
+.compra-online .frame {
+  position: absolute;
+  top: 222px;
+  left: 80px;
+  width: 360px;
+  height: 630px;
+  background-color: var(--variable-collection-neutro-600);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.compra-online .div-wrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 16px;
+  position: absolute;
+  top: 68px;
+  left: 78px;
+}
+
+.compra-online .text-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  margin-top: -1.00px;
+  font-family: var(--h3-font-family);
+  font-weight: var(--h3-font-weight);
+  color: #ffffff;
+  font-size: var(--h3-font-size);
+  text-align: center;
+  letter-spacing: var(--h3-letter-spacing);
+  line-height: var(--h3-line-height);
+  white-space: nowrap;
+  font-style: var(--h3-font-style);
+}
+
+.compra-online .div {
+  display: flex;
+  width: 48px;
+  height: 25px;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 16px;
+  position: absolute;
+  top: 197px;
+  left: 112px;
+}
+
+.compra-online .text-wrapper-2 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  margin-top: -17.50px;
+  margin-bottom: -15.50px;
+  margin-left: -22.50px;
+  margin-right: -22.50px;
+  font-family: var(--body-font-family);
+  font-weight: var(--body-font-weight);
+  color: #ffffff;
+  font-size: var(--body-font-size);
+  text-align: center;
+  letter-spacing: var(--body-letter-spacing);
+  line-height: var(--body-line-height);
+  white-space: nowrap;
+  font-style: var(--body-font-style);
+}
+
+.compra-online .frame-2 {
+  display: flex;
+  width: 48px;
+  height: 25px;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 16px;
+  position: absolute;
+  top: 307px;
+  left: 103px;
+}
+
+.compra-online .text-wrapper-3 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  margin-top: -17.50px;
+  margin-bottom: -15.50px;
+  margin-left: -11.00px;
+  margin-right: -11.00px;
+  font-family: var(--body-font-family);
+  font-weight: var(--body-font-weight);
+  color: #ffffff;
+  font-size: var(--body-font-size);
+  text-align: center;
+  letter-spacing: var(--body-letter-spacing);
+  line-height: var(--body-line-height);
+  white-space: nowrap;
+  font-style: var(--body-font-style);
+}
+
+.compra-online .frame-3 {
+  display: flex;
+  width: 48px;
+  height: 25px;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 16px;
+  position: absolute;
+  top: 252px;
+  left: 112px;
+}
+
+.compra-online .text-wrapper-4 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  margin-top: -17.50px;
+  margin-bottom: -15.50px;
+  margin-left: -25.50px;
+  margin-right: -25.50px;
+  font-family: var(--body-font-family);
+  font-weight: var(--body-font-weight);
+  color: #ffffff;
+  font-size: var(--body-font-size);
+  text-align: center;
+  letter-spacing: var(--body-letter-spacing);
+  line-height: var(--body-line-height);
+  white-space: nowrap;
+  font-style: var(--body-font-style);
+}
+
+.compra-online .frame-4 {
+  display: flex;
+  width: 48px;
+  height: 25px;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 16px;
+  position: absolute;
+  top: 362px;
+  left: 112px;
+}
+
+.compra-online .text-wrapper-5 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  margin-top: -17.50px;
+  margin-bottom: -15.50px;
+  margin-left: -24.00px;
+  margin-right: -24.00px;
+  font-family: var(--body-font-family);
+  font-weight: var(--body-font-weight);
+  color: #ffffff;
+  font-size: var(--body-font-size);
+  text-align: center;
+  letter-spacing: var(--body-letter-spacing);
+  line-height: var(--body-line-height);
+  white-space: nowrap;
+  font-style: var(--body-font-style);
+}
+
+.compra-online .icon {
+  position: absolute;
+  top: 198px;
+  left: 54px;
+  width: 24px;
+  height: 24px;
+  aspect-ratio: 1;
+}
+
+.compra-online .img-checkbox {
+  top: 252px;
+  position: absolute;
+  left: 54px;
+  width: 24px;
+  height: 24px;
+  aspect-ratio: 1;
+}
+
+.compra-online .icon-2 {
+  top: 306px;
+  position: absolute;
+  left: 54px;
+  width: 24px;
+  height: 24px;
+  aspect-ratio: 1;
+}
+
+.compra-online .icon-3 {
+  top: 360px;
+  position: absolute;
+  left: 54px;
+  width: 24px;
+  height: 24px;
+  aspect-ratio: 1;
+}
+
+.compra-online .footer-container {
+  position: absolute;
+  top: 941px;
+  left: 0;
+  width: 1440px;
+  height: 83px;
+  display: flex;
+  background-color: var(--primary-900);
+}
+
+.compra-online .frame-8 {
+  position: absolute;
+  top: 222px;
+  left: 497px;
+  width: 881px;
+  height: 630px;
+  display: flex;
+  background-color: var(--variable-collection-neutro-400);
+  border-radius: 12px;
+  overflow-y: auto;
+}
+
+.compra-online .frame-9 {
+  margin-top: 22px;
+  width: 851px;
+  height: 1409px;
+  margin-left: 15px;
+}
+
+.compra-online .frame-9::-webkit-scrollbar {
+  width: 0;
+  display: none;
+}
+
+.compra-online .CARD {
+  display: flex;
+  flex-direction: column;
+  width: 261px;
+  height: 312px;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 10px 10px 15px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  border-radius: 10px;
+  aspect-ratio: 0.84;
+  overflow-x: scroll;
+}
+
+.compra-online .CARD::-webkit-scrollbar {
+  width: 0;
+  display: none;
+}
+
+.compra-online .group-6 {
+  position: relative;
+  width: 248px;
+  height: 246px;
+}
+
+.compra-online .rectangle-3 {
+  width: 242px;
+  height: 158px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.compra-online .t-tulo {
+  position: absolute;
+  top: 165px;
+  left: 0;
+  width: 242px;
+  height: 23px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--small-body-font-family);
+  font-weight: var(--small-body-font-weight);
+  color: #000000;
+  font-size: var(--small-body-font-size);
+  letter-spacing: var(--small-body-letter-spacing);
+  line-height: var(--small-body-line-height);
+  white-space: nowrap;
+  font-style: var(--small-body-font-style);
+}
+
+.compra-online .autor {
+  position: absolute;
+  top: 195px;
+  left: 0;
+  width: 242px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--caption-font-family);
+  font-weight: var(--caption-font-weight);
+  color: #979797;
+  font-size: var(--caption-font-size);
+  letter-spacing: var(--caption-letter-spacing);
+  line-height: var(--caption-line-height);
+  white-space: nowrap;
+  font-style: var(--caption-font-style);
+}
+
+.compra-online .precio {
+  position: absolute;
+  top: 218px;
+  left: 0;
+  width: 83px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--small-body-font-family);
+  font-weight: var(--small-body-font-weight);
+  color: #dd9776;
+  font-size: var(--small-body-font-size);
+  letter-spacing: var(--small-body-letter-spacing);
+  line-height: var(--small-body-line-height);
+  font-style: var(--small-body-font-style);
+}
+
+.compra-online .buttons {
+  display: flex;
+  width: 154px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 12px 24px;
+  position: relative;
+  margin-bottom: -7.00px;
+  background-color: var(--secondary-500);
+  border-radius: 8px;
+}
+
+.compra-online .primary-button {
+  position: relative;
+  width: fit-content;
+  margin-top: -3.50px;
+  margin-bottom: -1.50px;
+  margin-left: -11.00px;
+  margin-right: -11.00px;
+  font-family: var(--small-body-font-family);
+  font-weight: var(--small-body-font-weight);
+  color: #ffffff;
+  font-size: var(--small-body-font-size);
+  letter-spacing: var(--small-body-letter-spacing);
+  line-height: var(--small-body-line-height);
+  white-space: nowrap;
+  font-style: var(--small-body-font-style);
+}
+
+.compra-online .CARD-2 {
+  top: 688px;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  width: 261px;
+  height: 312px;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 10px 10px 15px;
+  position: absolute;
+  background-color: #ffffff;
+  border-radius: 10px;
+  aspect-ratio: 0.84;
+  overflow-x: scroll;
+}
+
+.compra-online .CARD-2::-webkit-scrollbar {
+  width: 0;
+  display: none;
+}
+
+.compra-online .CARD-3 {
+  top: 344px;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  width: 261px;
+  height: 312px;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 10px 10px 15px;
+  position: absolute;
+  background-color: #ffffff;
+  border-radius: 10px;
+  aspect-ratio: 0.84;
+  overflow-x: scroll;
+}
+
+.compra-online .CARD-3::-webkit-scrollbar {
+  width: 0;
+  display: none;
+}
+
+.compra-online .CARD-4 {
+  top: 1032px;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  width: 261px;
+  height: 312px;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 10px 10px 15px;
+  position: absolute;
+  background-color: #ffffff;
+  border-radius: 10px;
+  aspect-ratio: 0.84;
+  overflow-x: scroll;
+}
+
+.compra-online .CARD-4::-webkit-scrollbar {
+  width: 0;
+  display: none;
+}
+
+.compra-online .CARD-5 {
+  top: 0;
+  left: 295px;
+  display: flex;
+  flex-direction: column;
+  width: 261px;
+  height: 312px;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 10px 10px 15px;
+  position: absolute;
+  background-color: #ffffff;
+  border-radius: 10px;
+  aspect-ratio: 0.84;
+  overflow-x: scroll;
+}
+
+.compra-online .CARD-5::-webkit-scrollbar {
+  width: 0;
+  display: none;
+}
+
+.compra-online .CARD-6 {
+  top: 688px;
+  left: 295px;
+  display: flex;
+  flex-direction: column;
+  width: 261px;
+  height: 312px;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 10px 10px 15px;
+  position: absolute;
+  background-color: #ffffff;
+  border-radius: 10px;
+  aspect-ratio: 0.84;
+  overflow-x: scroll;
+}
+
+.compra-online .CARD-6::-webkit-scrollbar {
+  width: 0;
+  display: none;
+}
+
+.compra-online .rectangle-4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 242px;
+  height: 158px;
+  object-fit: cover;
+}
+
+.compra-online .CARD-7 {
+  top: 344px;
+  left: 295px;
+  display: flex;
+  flex-direction: column;
+  width: 261px;
+  height: 312px;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 10px 10px 15px;
+  position: absolute;
+  background-color: #ffffff;
+  border-radius: 10px;
+  aspect-ratio: 0.84;
+  overflow-x: scroll;
+}
+
+.compra-online .CARD-7::-webkit-scrollbar {
+  width: 0;
+  display: none;
+}
+
+.compra-online .CARD-8 {
+  top: 1032px;
+  left: 295px;
+  display: flex;
+  flex-direction: column;
+  width: 261px;
+  height: 312px;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 10px 10px 15px;
+  position: absolute;
+  background-color: #ffffff;
+  border-radius: 10px;
+  aspect-ratio: 0.84;
+  overflow-x: scroll;
+}
+
+.compra-online .CARD-8::-webkit-scrollbar {
+  width: 0;
+  display: none;
+}
+
+.compra-online .CARD-9 {
+  top: 0;
+  left: 590px;
+  display: flex;
+  flex-direction: column;
+  width: 261px;
+  height: 312px;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 10px 10px 15px;
+  position: absolute;
+  background-color: #ffffff;
+  border-radius: 10px;
+  aspect-ratio: 0.84;
+  overflow-x: scroll;
+}
+
+.compra-online .CARD-9::-webkit-scrollbar {
+  width: 0;
+  display: none;
+}
+
+.compra-online .CARD-10 {
+  top: 688px;
+  left: 590px;
+  display: flex;
+  flex-direction: column;
+  width: 261px;
+  height: 312px;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 10px 10px 15px;
+  position: absolute;
+  background-color: #ffffff;
+  border-radius: 10px;
+  aspect-ratio: 0.84;
+  overflow-x: scroll;
+}
+
+.compra-online .CARD-10::-webkit-scrollbar {
+  width: 0;
+  display: none;
+}
+
+.compra-online .CARD-11 {
+  top: 344px;
+  left: 590px;
+  display: flex;
+  flex-direction: column;
+  width: 261px;
+  height: 312px;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 10px 10px 15px;
+  position: absolute;
+  background-color: #ffffff;
+  border-radius: 10px;
+  aspect-ratio: 0.84;
+  overflow-x: scroll;
+}
+
+.compra-online .CARD-11::-webkit-scrollbar {
+  width: 0;
+  display: none;
+}
+
+.compra-online .CARD-12 {
+  top: 1032px;
+  left: 590px;
+  display: flex;
+  flex-direction: column;
+  width: 261px;
+  height: 312px;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 10px 10px 15px;
+  position: absolute;
+  background-color: #ffffff;
+  border-radius: 10px;
+  aspect-ratio: 0.84;
+  overflow-x: scroll;
+}
+
+.compra-online .CARD-12::-webkit-scrollbar {
+  width: 0;
+  display: none;
+}
+
+
+
+.checkbox-icon {
+  font-size: 24px;
+  color: #ffffff;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Header Styles from index.html adapted */
+.compra-online .group-15 {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 1440px;
+  height: 159px;
+  display: flex;
+  gap: 1046px;
+  background-color: var(--primary-800);
+}
+
+.compra-online .frame-6 {
+  display: flex;
+  margin-top: 43px;
+  width: 139px;
+  height: 74px;
+  position: relative;
+  margin-left: 80px;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 16px;
+}
+
+.compra-online .text-wrapper-14 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1.00px;
+  margin-left: -20.50px;
+  margin-right: -20.50px;
+  font-family: var(--h3-font-family);
+  font-weight: var(--h3-font-weight);
+  color: #ffffff;
+  font-size: var(--h3-font-size);
+  letter-spacing: var(--h3-letter-spacing);
+  line-height: var(--h3-line-height);
+  white-space: nowrap;
+  font-style: var(--h3-font-style);
+}
+
+.compra-online .milhojas {
+  margin-top: 19px;
+  width: 113px;
+  height: 113px;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.compra-online .group-16 {
+  position: fixed;
+  z-index: 1000;
+  top: 43px;
+  left: 256px;
+  width: 952px;
+  height: 89px;
+  background-color: var(--primary-800);
+}
+
+.compra-online .buttons-2 {
+  width: 139px;
+  position: absolute;
+  top: 19px;
+  left: 625px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 12px 24px;
+  background-color: var(--secondary-500);
+}
+
+.compra-online .primary-button-3 {
+  margin-top: -1.00px;
+  margin-left: -23.80px;
+  margin-right: -23.80px;
+  font-size: var(--h5-font-size);
+  line-height: var(--h5-line-height);
+  position: relative;
+  width: fit-content;
+  font-family: var(--h5-font-family);
+  font-weight: var(--h5-font-weight);
+  color: #ffffff;
+  white-space: nowrap;
+  font-style: var(--h5-font-style);
+  letter-spacing: var(--h5-letter-spacing);
+}
+
+.compra-online .buttons-3 {
+  width: 95px;
+  position: absolute;
+  top: 20px;
+  left: 514px;
+  background-color: var(--secondary-500);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 12px 24px;
+}
+
+.compra-online .primary-button-4 {
+  margin-top: -1.00px;
+  margin-left: -16.29px;
+  margin-right: -16.29px;
+  font-family: var(--h5-font-family);
+  font-weight: var(--h5-font-weight);
+  color: #ffffff;
+  font-size: var(--h5-font-size);
+  letter-spacing: var(--h5-letter-spacing);
+  line-height: var(--h5-line-height);
+  position: relative;
+  width: fit-content;
+  white-space: nowrap;
+  font-style: var(--h5-font-style);
+}
+
+.compra-online .buttons-4 {
+  width: 99px;
+  position: absolute;
+  top: 19px;
+  left: 781px;
+  background-color: var(--secondary-500);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 12px 24px;
+}
+
+.compra-online .primary-button-5 {
+  margin-top: -1.00px;
+  margin-left: -16.92px;
+  margin-right: -16.92px;
+  font-family: var(--h5-font-family);
+  font-weight: var(--h5-font-weight);
+  color: #ffffff;
+  font-size: var(--h5-font-size);
+  letter-spacing: var(--h5-letter-spacing);
+  line-height: var(--h5-line-height);
+  position: relative;
+  width: fit-content;
+  white-space: nowrap;
+  font-style: var(--h5-font-style);
+}
+
+.compra-online .group-17 {
+  position: absolute;
+  top: 20px;
+  left: 81px;
+  width: 289px;
+  height: 50px;
+  display: flex;
+  background-color: var(--primary-500);
+}
+
+.compra-online .frame-7 {
+  display: flex;
+  width: 63.37px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 16px;
+  position: relative;
+  margin-left: 102.1px;
+  background-color: var(--primary-500);
+}
+
+.compra-online .text-wrapper-15 {
+  position: relative;
+  width: fit-content;
+  margin-top: -4.50px;
+  margin-bottom: -2.50px;
+  margin-left: -29.82px;
+  margin-right: -29.82px;
+  font-family: var(--h5-font-family);
+  font-weight: var(--h5-font-weight);
+  color: #ffffff;
+  font-size: var(--h5-font-size);
+  letter-spacing: var(--h5-letter-spacing);
+  line-height: var(--h5-line-height);
+  white-space: nowrap;
+  font-style: var(--h5-font-style);
+}
+
+.compra-online .group-18 {
+  position: absolute;
+  top: 36px;
+  left: 322px;
+  width: 21px;
+  height: 21px;
+  background-image: url(./img/icon-2.svg);
+  background-size: 100% 100%;
+}
+
+.compra-online .footer-container .frame {
+  display: flex !important;
+  flex-direction: column;
+  width: 48px;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 16px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: auto;
+  background-color: transparent;
+  width: 48px !important;
+  height: auto !important;
+}
+
+.compra-online .f-footer-container {
+  position: absolute;
+  top: 941px;
+  left: 0;
+  width: 1440px;
+  height: 83px;
+  display: flex;
+  background-color: var(--primary-900);
+}
+
+.compra-online .f-instagram-container {
+  margin-top: 13px;
+  width: 48px;
+  height: 56px;
+  position: relative;
+  margin-left: 315px;
+}
+
+.compra-online .f-x-container {
+  margin-top: 13px;
+  width: 48px;
+  height: 56px;
+  margin-left: 60px;
+  position: relative;
+}
+
+.compra-online .f-youtube-container {
+  margin-top: 13px;
+  width: 48px;
+  height: 56px;
+  margin-left: 60px;
+  position: relative;
+}
+
+.compra-online .f-ellipse {
+  position: absolute;
+  top: 6px;
+  left: 3px;
+  width: 42px;
+  height: 41px;
+  background-color: var(--variable-collection-neutro-500);
+  border-radius: 21px / 20.5px;
+}
+
+.compra-online .f-icon-frame {
+  display: flex;
+  flex-direction: column;
+  width: 48px;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 16px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.compra-online .f-policy-wrapper {
+  margin-top: 25px;
+  width: 85px;
+  margin-left: 153px;
+  display: flex;
+  background-color: var(--variable-collection-neutro-500);
+}
+
+.compra-online .f-policy-inner {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 16px;
+  position: relative;
+}
+
+.compra-online .f-text-policy {
+  position: relative;
+  width: fit-content;
+  margin-top: -1.00px;
+  font-family: var(--caption-font-family);
+  font-weight: var(--caption-font-weight);
+  color: #474646;
+  font-size: var(--caption-font-size);
+  letter-spacing: var(--caption-letter-spacing);
+  line-height: var(--caption-line-height);
+  font-style: var(--caption-font-style);
+  white-space: nowrap;
+}
+
+.compra-online .f-cookies-container {
+  margin-top: 25px;
+  width: 100px;
+  height: 34px;
+  position: relative;
+  margin-left: 60px;
+}
+
+.compra-online .f-cookies-container {
+  margin-top: 25px;
+  width: 98px;
+  height: 34px;
+  position: relative;
+  margin-left: 60px;
+}
+
+.compra-online .f-mateo-container {
+  margin-top: 25px;
+  width: 86px;
+  height: 34px;
+  position: relative;
+  margin-left: 240px;
+}
+
+.compra-online .f-rectangle {
+  width: 100%;
+  height: 34px;
+  background-color: var(--variable-collection-neutro-500);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.compra-online .f-text-cookies,
+.compra-online .f-text-mateo {
+  position: absolute;
+  top: 7px;
+  left: 17px;
+  width: fit-content;
+  font-family: var(--small-body-font-family);
+  font-weight: var(--small-body-font-weight);
+  color: #474646;
+  font-size: var(--small-body-font-size);
+  letter-spacing: var(--small-body-letter-spacing);
+  line-height: var(--small-body-line-height);
+  white-space: nowrap;
+  font-style: var(--small-body-font-style);
+}
