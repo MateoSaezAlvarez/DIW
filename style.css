@@ -46,22 +46,7 @@
   left: 0;
 }
 
-.pgina-principal .vector-wrapper {
-  position: relative;
-  width: 24px;
-  height: 24px;
-  margin-left: -4px;
-  margin-right: -4px;
-  aspect-ratio: 1;
-}
 
-.pgina-principal .vector {
-  position: absolute;
-  width: 83.33%;
-  height: 83.33%;
-  top: 8.33%;
-  left: 8.33%;
-}
 
 .pgina-principal .img {
   margin-top: 13px;
@@ -79,13 +64,6 @@
   margin-left: 60px;
 }
 
-.pgina-principal .vector-2 {
-  position: absolute;
-  width: 83.33%;
-  height: 58.33%;
-  top: 20.83%;
-  left: 8.33%;
-}
 
 .pgina-principal .frame-wrapper {
   margin-top: 25px;
@@ -1410,15 +1388,6 @@
   aspect-ratio: 1;
 }
 
-.compra-online .footer-container {
-  position: absolute;
-  top: 941px;
-  left: 0;
-  width: 100%;
-  height: 83px;
-  display: flex;
-  background-color: var(--primary-900);
-}
 
 .compra-online .frame-8 {
   position: absolute;
@@ -2001,22 +1970,15 @@
   background-color: var(--primary-500);
 }
 
-.compra-online .vector-wrapper {
-  position: relative;
-  width: 24px;
-  height: 24px;
-  aspect-ratio: 1;
-}
 
 .compra-online .search-input {
   background-color: var(--primary-500);
-  color: #ffffff;
-  font-family: var(--body-font-family);
-  font-size: var(--body-font-size);
   border: none;
-  outline: none;
+  color: #ffffff;
+  font-family: var(--h5-font-family);
+  font-size: var(--h5-font-size);
   width: 100%;
-  height: 100%;
+  outline: none;
 }
 
 .compra-online .search-input::placeholder {
@@ -2024,20 +1986,28 @@
 }
 
 .compra-online .f-footer-container {
-  position: absolute;
-  top: 941px;
-  left: 0;
+  display: flex;
   width: 100%;
   height: 83px;
-  /* display: flex;  Already defined above */
   background-color: var(--primary-900);
+  margin-top: 1024px; /* Default placement below main content */
+  position: relative;
+  align-items: center;
 }
 
-.compra-online .f-instagram-container {
+/* Replicate the spacing and look of the original footer */
+.compra-online .f-instagram-container,
+.compra-online .f-x-container,
+.compra-online .f-youtube-container {
   margin-top: 13px;
   width: 48px;
   height: 56px;
   position: relative;
+  margin-left: 60px;
+}
+
+/* The first one has a larger margin-left in the original (315px) */
+.compra-online .f-instagram-container {
   margin-left: 315px;
 }
 
@@ -2064,27 +2034,6 @@
   left: 0;
 }
 
-.social-icon {
-  font-size: 20px;
-  color: #000;
-}
-
-.compra-online .f-x-container {
-  margin-top: 13px;
-  width: 48px;
-  height: 56px;
-  margin-left: 60px;
-  position: relative;
-}
-
-.compra-online .f-youtube-container {
-  margin-top: 13px;
-  width: 48px;
-  height: 56px;
-  position: relative;
-  margin-left: 60px;
-}
-
 .compra-online .f-policy-wrapper {
   margin-top: 25px;
   width: 85px;
@@ -2107,7 +2056,7 @@
 .compra-online .f-text-policy {
   position: relative;
   width: 62px;
-  margin-top: -1.00px;
+  margin-top: -1px;
   font-family: var(--caption-font-family);
   font-weight: var(--caption-font-weight);
   color: #474646;
@@ -2115,23 +2064,38 @@
   letter-spacing: var(--caption-letter-spacing);
   line-height: var(--caption-line-height);
   font-style: var(--caption-font-style);
+}
+
+.compra-online .f-cookies-container {
+  margin-top: 25px;
+  width: 86px;
+  height: 34px;
+  position: relative;
+  margin-left: 24px;
+}
+
+.compra-online .f-rectangle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 84px;
+  height: 34px;
+  background-color: var(--variable-collection-neutro-500);
+}
+
+.compra-online .f-text-cookies {
+  position: absolute;
+  top: 7px;
+  left: 17px;
+  width: 52px;
+  font-family: var(--small-body-font-family);
+  font-weight: var(--small-body-font-weight);
+  color: #474646;
+  font-size: var(--small-body-font-size);
+  letter-spacing: var(--small-body-letter-spacing);
+  line-height: var(--small-body-line-height);
   white-space: nowrap;
-}
-
-.compra-online .f-cookies-container {
-  margin-top: 25px;
-  width: 100px;
-  height: 34px;
-  position: relative;
-  margin-left: 60px;
-}
-
-.compra-online .f-cookies-container {
-  margin-top: 25px;
-  width: 98px;
-  height: 34px;
-  position: relative;
-  margin-left: 60px;
+  font-style: var(--small-body-font-style);
 }
 
 .compra-online .f-mateo-container {
@@ -2142,21 +2106,11 @@
   margin-left: 240px;
 }
 
-.compra-online .f-rectangle {
-  width: 100%;
-  height: 34px;
-  background-color: var(--variable-collection-neutro-500);
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.compra-online .f-text-cookies,
 .compra-online .f-text-mateo {
   position: absolute;
   top: 7px;
   left: 17px;
-  width: fit-content;
+  width: 59px;
   font-family: var(--small-body-font-family);
   font-weight: var(--small-body-font-weight);
   color: #474646;
@@ -2181,115 +2135,297 @@
   align-items: center;
 }
 
-/* Tablet Media Query (601px - 1024px) */
-@media screen and (min-width: 601px) and (max-width: 1024px) {
-    .compra-online .group-15 {
-        justify-content: space-between;
-        padding: 0 40px;
-    }
+/* --- Validated Footer Styles for Compra Online --- */
 
-    .compra-online .frame-6 {
-        order: 1;
-        margin-left: 0;
-    }
+.compra-online .footer-group {
+    position: absolute;
+    top: 900px;
+    left: 0;
+    width: 100%;
+    height: 83px;
+    display: flex;
+    background-color: var(--primary-900);
+}
 
-    .compra-online .milhojas {
-        order: 2;
-        margin-right: 0;
-        width: 80px;
-        height: 80px;
-    }
+.compra-online .footer-div {
+    margin-top: 13px;
+    width: 48px;
+    height: 56px;
+    position: relative;
+    margin-left: 315px;
+}
 
-    .compra-online .group-16 {
-        width: auto;
-        right: 40px;
-        left: auto;
-        top: 100px;
+.compra-online .footer-ellipse {
+    position: absolute;
+    top: 6px;
+    left: 3px;
+    width: 42px;
+    height: 41px;
+    background-color: var(--variable-collection-neutro-500);
+    border-radius: 21px / 20.5px;
+}
+
+.compra-online .footer-frame {
+    display: flex;
+    flex-direction: column;
+    width: 48px;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding: 16px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.compra-online .footer-img {
+    margin-top: 13px;
+    width: 48px;
+    height: 56px;
+    margin-left: 60px;
+    position: relative;
+}
+
+.compra-online .footer-group-2 {
+    margin-top: 13px;
+    width: 48px;
+    height: 56px;
+    position: relative;
+    margin-left: 60px;
+}
+
+.compra-online .footer-frame-wrapper {
+    margin-top: 25px;
+    width: 85px;
+    margin-left: 153px;
+    display: flex;
+    background-color: var(--variable-collection-neutro-500);
+}
+
+.compra-online .footer-div-wrapper {
+    display: inline-flex;
+    width: 62px;
+    height: 34px;
+    margin-left: 15px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.compra-online .footer-text-wrapper {
+    position: relative;
+    width: 62px;
+    margin-top: -1px;
+    font-family: var(--caption-font-family);
+    font-weight: var(--caption-font-weight);
+    color: #474646;
+    font-size: var(--caption-font-size);
+    letter-spacing: var(--caption-letter-spacing);
+    line-height: var(--caption-line-height);
+    font-style: var(--caption-font-style);
+}
+
+.compra-online .footer-group-3 {
+    margin-top: 25px;
+    width: 86px;
+    height: 34px;
+    position: relative;
+    margin-left: 24px;
+}
+
+.compra-online .footer-rectangle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 84px;
+    height: 34px;
+    background-color: var(--variable-collection-neutro-500);
+}
+
+.compra-online .footer-text-wrapper-2 {
+    position: absolute;
+    top: 7px;
+    left: 17px;
+    width: 52px;
+    font-family: var(--small-body-font-family);
+    font-weight: var(--small-body-font-weight);
+    color: #474646;
+    font-size: var(--small-body-font-size);
+    letter-spacing: var(--small-body-letter-spacing);
+    line-height: var(--small-body-line-height);
+    white-space: nowrap;
+    font-style: var(--small-body-font-style);
+}
+
+.compra-online .footer-group-4 {
+    margin-top: 25px;
+    width: 86px;
+    height: 34px;
+    position: relative;
+    margin-left: 240px;
+}
+
+.compra-online .footer-text-wrapper-3 {
+    position: absolute;
+    top: 7px;
+    left: 17px;
+    width: 59px;
+    font-family: var(--small-body-font-family);
+    font-weight: var(--small-body-font-weight);
+    color: #474646;
+    font-size: var(--small-body-font-size);
+    letter-spacing: var(--small-body-letter-spacing);
+    line-height: var(--small-body-line-height);
+    white-space: nowrap;
+    font-style: var(--small-body-font-style);
+}
+
+
+
+
+
+.compra-online .group-18 {
+  position: absolute;
+  top: 36px;
+  left: 322px;
+  width: 21px;
+  height: 21px;
+  background-image: url(./img/icon.svg);
+  background-size: 100% 100%;
+}
+
+/* --- Responsiveness for Index1.html (Compra Online) --- */
+
+@media screen and (max-width: 1024px) {
+    .compra-online {
+        min-height: auto;
         height: auto;
-        flex-wrap: wrap; 
-    }
-  
-    .nav-links {
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-
-    .compra-online .group-17 {
-        position: relative;
-        top: 0;
-        left: 0;
-        width: 100%;
-        margin-top: 10px;
-    }
-
-    .compra-online .frame-7 {
-      width: 100%;
+        overflow-x: hidden;
     }
     
-    /* Reset button positions */
-    .compra-online .buttons-2,
-    .compra-online .buttons-3,
-    .compra-online .buttons-4 {
+    /* Header Adjustments */
+    .compra-online .group-15 { /* Logo Strip */
+        position: relative;
+        height: auto;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .compra-online .milhojas {
+        position: relative;
+        margin: 0;
+        top: 0;
+        right: 0;
+    }
+    .compra-online .frame-6 {
+        margin: 0;
+        width: auto;
+    }
+    
+    .compra-online .group-16 { /* Nav Strip */
         position: relative;
         top: 0;
         left: 0;
-    }
-
-    /* Content Layout - Stacking Sidebar and Grid */
-    .compra-online .frame {
-        /* Sidebar */
-        position: relative;
-        top: 180px; /* Below header/nav */
-        left: 0;
+        right: 0;
         width: 100%;
         height: auto;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        margin-bottom: 20px;
-        padding-bottom: 20px;
+        gap: 10px;
+        padding: 10px;
+        background-color: var(--primary-800);
     }
     
-    /* Modify sidebar items for horizontal/flex layout */
+    .compra-online .buttons-2,
+    .compra-online .buttons-3,
+    .compra-online .buttons-4,
+    .compra-online .group-17 {
+        position: relative;
+        top: 0;
+        left: 0;
+        margin: 0;
+        width: auto;
+    }
+
+    .compra-online .group-18 {
+        position: relative;
+        top: 0;
+        left: 0;
+        margin: 10px;
+    }
+
+    /* Stacking Content (Sidebar and Grid) */
+    .compra-online .frame { /* Sidebar - Tablet Bar Style */
+        top: auto;
+        position: relative;
+        margin-top: 40px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 95%;
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr auto auto auto auto;
+        align-items: center;
+        gap: 20px;
+        padding: 15px 40px;
+        background-color: var(--variable-collection-neutro-600);
+        border-radius: 15px;
+    }
+    
     .compra-online .div-wrapper,
-    .compra-online .div,
+    .compra-online .div, 
     .compra-online .frame-2,
     .compra-online .frame-3,
-    .compra-online .frame-4,
+    .compra-online .frame-4 {
+        position: relative;
+        top: 0 !important;
+        left: 0 !important;
+        margin: 0;
+        width: auto;
+    }
+
+    .compra-online .div-wrapper { grid-column: 1; justify-self: start; }
+    .compra-online .div { grid-column: 2; }
+    .compra-online .frame-2 { grid-column: 3; }
+    .compra-online .frame-3 { grid-column: 4; }
+    .compra-online .frame-4 { grid-column: 5; }
+    
     .compra-online .icon,
     .compra-online .img-checkbox,
     .compra-online .icon-2,
     .compra-online .icon-3 {
-        position: relative;
-        top: 0;
-        left: 0;
-        width: auto;
-        margin: 5px;
+        display: none; /* Hide decorative icons for cleaner tablet view as per sketch */
     }
 
-    .compra-online .frame-8 {
-        /* Product Grid Container */
+    .compra-online .frame-8 { /* Product Grid Container */
+        top: auto;
         position: relative;
-        top: 180px; 
-        left: 0;
-        width: 100%;
+        margin-top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
         height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        background-color: transparent;
         overflow: visible;
-        display: block; /* Allow normal flow */
+    }
+    
+    .compra-online .frame-9 { /* inner grid container */
+       width: 100%;
+       height: auto;
+       display: flex; 
+       flex-wrap: wrap;
+       justify-content: center;
+       gap: 20px;
+       margin: 0;
     }
 
-    .compra-online .frame-9 {
-         width: 100%;
-         height: auto;
-         margin: 0;
-         display: flex;
-         flex-wrap: wrap;
-         justify-content: center;
-         gap: 20px;
-         padding: 20px;
-    }
-
-    /* Catalog Grid - 2 to 3 items per row */
     .compra-online .CARD,
     .compra-online .CARD-2,
     .compra-online .CARD-3,
@@ -2305,74 +2441,88 @@
         position: relative;
         top: 0;
         left: 0;
-        width: 30%; /* Approx 3 per row (minus gap) */
-        min-width: 250px; /* Fallback to fewer per row if too narrow */
         margin: 0;
     }
-    
-    /* Footer */
-    .compra-online .footer-container {
+
+    /* Footer Fix for Tablet */
+    .compra-online .footer-group {
         position: relative;
-        top: 200px; /* Spacing from content */
-        left: 0;
-        width: 100%;
+        top: auto;
+        margin-top: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
         height: auto;
-        justify-content: space-around;
-        padding: 20px;
+        padding: 40px 0;
+        gap: 20px;
+        background-color: var(--primary-900);
+    }
+    
+    .compra-online .footer-div,
+    .compra-online .footer-img,
+    .compra-online .footer-group-2,
+    .compra-online .footer-frame-wrapper,
+    .compra-online .footer-group-3,
+    .compra-online .footer-group-4 {
+        position: relative;
+        margin: 0;
+        top: 0;
+        left: 0;
     }
 }
 
-/* Mobile Media Query (<= 600px) */
-@media screen and (max-width: 600px) {
-    /* Header Vertical */
+@media screen and (max-width: 768px) {
+    /* Header - Mobile (Mirroring Landing Page Style) */
     .compra-online .group-15 {
+        position: relative;
         height: auto;
         flex-direction: column;
         align-items: center;
-        padding: 20px;
+        padding-bottom: 20px;
     }
 
     .compra-online .frame-6 {
         margin: 0;
-        width: auto;
-        margin-left: 0;
     }
-
-    /* Hide Logo on Mobile for Products Page */
+    
     .compra-online .milhojas {
-        display: none;
+        margin: 0;
+        margin-bottom: 10px;
     }
 
-    /* Hamburger Menu */
-    .hamburger-menu {
+    .compra-online .hamburger-menu {
         display: block;
+        font-size: 30px;
+        color: #ffffff;
+        cursor: pointer;
         position: absolute;
         top: 20px;
         right: 20px;
+        z-index: 2001;
     }
 
-    .compra-online .group-16 {
-        position: relative;
+    /* Off-Canvas Nav (Mirroring Landing Page Transition) */
+    .compra-online .group-16.nav-links {
+        position: fixed;
         top: 0;
-        left: 0;
+        right: -100%; 
+        left: auto !important;
+        width: 280px;
+        height: 100vh;
+        background-color: var(--primary-800);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 20px;
+        padding-top: 80px;
+        z-index: 2000;
+        transition: right 0.3s ease-in-out;
+        box-shadow: -5px 0 15px rgba(0,0,0,0.3);
+    }
+
+    .compra-online .group-16.nav-links.active {
         right: 0;
-        width: 100%;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        padding: 10px;
-    }
-    
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        gap: 10px;
-        margin-top: 10px;
-    }
-    
-    .nav-links.active {
-        display: flex;
     }
 
     .compra-online .buttons-2,
@@ -2381,113 +2531,602 @@
         position: relative;
         top: 0;
         left: 0;
-        width: 100%;
+        width: 80%;
+        margin: 0;
     }
 
     .compra-online .group-17 {
         position: relative;
         top: 0;
         left: 0;
-        width: 100%;
-        margin-top: 15px;
-    }
-    
-    .compra-online .frame-7 {
-       width: 100%;
-    }
-
-    /* Stack Content */
-    .compra-online .frame {
-        /* Sidebar */
-        position: relative;
-        top: 0; 
-        left: 0;
-        width: 100%;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        width: 80%;
         margin-top: 20px;
     }
+
+    .compra-online .group-18 {
+        display: none;
+    }
+
+    /* Category Filters - Mobile List Style with Checkboxes */
+    .compra-online .frame { 
+        width: 90%;
+        left: 5%;
+        transform: none;
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 15px 20px;
+        padding: 30px;
+        justify-items: start;
+        align-items: center;
+        height: auto;
+        position: relative;
+    }
+
+    .compra-online .div-wrapper { 
+        grid-column: span 2; 
+        justify-self: center; 
+        margin-bottom: 15px;
+    }
     
-    .compra-online .div-wrapper,
-    .compra-online .div,
-    .compra-online .frame-2,
-    .compra-online .frame-3,
-    .compra-online .frame-4,
     .compra-online .icon,
     .compra-online .img-checkbox,
     .compra-online .icon-2,
     .compra-online .icon-3 {
+        display: flex;
+        grid-column: 1;
+        position: relative !important;
+        top: 0 !important;
+        left: 0 !important;
+    }
+
+    .compra-online .div, 
+    .compra-online .frame-2,
+    .compra-online .frame-3,
+    .compra-online .frame-4 {
+        grid-column: 2;
+        position: relative !important;
+        top: 0 !important;
+        left: 0 !important;
+        padding: 0;
+        margin: 0;
+        height: auto;
+        width: auto;
+    }
+    
+    /* Re-order for sketch matching: Comics, Mangas, Cafe, Comida */
+    .compra-online .icon { order: 2; }
+    .compra-online .div { order: 3; }
+    
+    .compra-online .img-checkbox { order: 4; }
+    .compra-online .frame-3 { order: 5; }
+
+    .compra-online .icon-2 { order: 6; }
+    .compra-online .frame-2 { order: 7; }
+    
+    .compra-online .icon-3 { order: 8; }
+    .compra-online .frame-4 { order: 9; }
+
+    /* Footer - Mobile Stacking */
+    .compra-online .footer-group {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        padding: 40px 0;
+        gap: 20px;
+        align-items: center;
+        background-color: var(--primary-900);
+        width: 100%;
+        left: 0;
+        top: auto;
+        position: relative;
+        margin-top: 0;
+    }
+    
+    .compra-online .footer-div,
+    .compra-online .footer-img,
+    .compra-online .footer-group-2,
+    .compra-online .footer-frame-wrapper,
+    .compra-online .footer-group-3,
+    .compra-online .footer-group-4 {
+        position: relative;
+        margin: 0;
+        top: 0;
+        left: 0;
+    }
+}
+
+/* --- Responsiveness for Index.html (Landing Page) --- */
+
+@media screen and (max-width: 1024px) {
+    .pgina-principal {
+        min-height: auto;
+        height: auto;
+        overflow-x: hidden;
+    }
+    
+    /* Header Adjustments */
+    .pgina-principal .group-15 { /* Logo Strip */
+        position: relative;
+        height: auto;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .pgina-principal .milhojas {
+        position: relative;
+        margin: 0;
+        top: 0;
+        right: 0;
+    }
+    .pgina-principal .frame-6 {
+        margin: 0;
+        width: auto;
+    }
+    
+    .pgina-principal .group-16 { /* Nav Strip */
         position: relative;
         top: 0;
         left: 0;
-        margin: 5px 0;
-    }
-
-    .compra-online .frame-8 {
-        position: relative;
-        top: 20px;
-        left: 0;
+        right: 0;
         width: 100%;
         height: auto;
-        overflow: visible;
-        background-color: transparent;
+        /* Make it wrap for tablet */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        padding: 10px;
+        background-color: var(--primary-800);
     }
-
-    .compra-online .frame-9 {
-         width: 100%;
-         height: auto;
-         margin: 0;
-         display: flex;
-         flex-direction: column;
-         align-items: center;
-         gap: 20px;
-         padding: 0 10px;
-    }
-
-    /* Catalog Stack - 1 item per row */
-     .compra-online .CARD,
-    .compra-online .CARD-2,
-    .compra-online .CARD-3,
-    .compra-online .CARD-4,
-    .compra-online .CARD-5,
-    .compra-online .CARD-6,
-    .compra-online .CARD-7,
-    .compra-online .CARD-8,
-    .compra-online .CARD-9,
-    .compra-online .CARD-10,
-    .compra-online .CARD-11,
-    .compra-online .CARD-12 {
+    
+    .pgina-principal .buttons-2,
+    .pgina-principal .buttons-3,
+    .pgina-principal .buttons-4,
+    .pgina-principal .group-17 {
         position: relative;
         top: 0;
         left: 0;
+        margin: 0;
+        width: auto;
+    }
+    
+    /* Best Sellers */
+    .pgina-principal .group-5 {
+        top: auto;
+        position: relative;
+        margin-top: 40px;
         width: 100%;
-        max-width: 360px;
+        left: 0;
+        right: 0;
+        height: auto;
+        padding: 0 20px;
+    }
+    
+    .pgina-principal .group-6 { /* Title background */
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    .pgina-principal .frame-2 { /* Title text container */
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+    }
+    
+    .pgina-principal .frame-3 { /* Cards Container */
+        width: 100%;
+        margin-left: 0;
+        padding-left: 0;
+        overflow-x: auto;
+        justify-content: flex-start; /* Scroll naturally */
+    }
+    
+    /* Cafe Section - Fix Overlay */
+    .pgina-principal .group-13 { 
+        top: auto;
+        position: relative;
+        margin-top: 50px;
+        width: 100%;
+        left: 0;
+        right: 0;
+        height: auto;
+        display: flex; /* Flex Column */
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .pgina-principal .rectangle-5 {
+        display: none; /* Remove fixed bg rect to avoid weird sizing */
+    }
+    
+    .pgina-principal .p, 
+    .pgina-principal .text-wrapper-8 {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 90%;
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 32px; /* Scale font down slightly if needed */
+        line-height: normal;
+        white-space: normal;
+    }
+    .pgina-principal .text-wrapper-8 {
+        font-size: 20px;
+    }
+    
+    .pgina-principal .image {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
+        margin-top: 0;
+        width: 80%;
+        max-width: 500px;
+        height: auto;
+    }
+
+    /* Search & Location Header - Fix Alignment */
+    .pgina-principal .group-9 { 
+        top: auto;
+        position: relative;
+        margin-top: 50px;
+        width: 100%;
+        left: 0;
+        right: 0;
+        height: auto;
+        padding-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .pgina-principal .group-10 { /* Search box container */
+        position: relative;
+        left: 0;
+        transform: none;
+        top: 0;
+        width: auto;
+        min-width: 300px;
+    }
+
+    .pgina-principal .group-12 { /* Location Header */
+        position: relative;
+        top: 0;
+        left: 0;
+        width: auto;
+        min-width: 300px;
+        background-color: transparent; /* Assuming container has bg or children do */
+        display: flex;
+        justify-content: center;
+    }
+    .pgina-principal .frame-5 { /* Inner Location Box */
+        position: relative;
+        margin: 0;
+        left: 0;
+        width: 100%;
+    }
+    .pgina-principal .text-wrapper-7 { /* Nuestra Ubicacion Text */
+        margin: 0;
+        left: 0;
+    }
+    
+    .pgina-principal .group-11 {
+        display: none; /* Hide icon if problematic positioning */
+    }
+    
+    /* Map */
+    .pgina-principal .maps-full-map-wrapper {
+        top: auto;
+        position: relative;
+        margin-top: 20px;
+        left: 0;
+        width: 100%;
+        padding: 0 5%;
+        height: 400px;
+    }
+    
+    .pgina-principal .maps-zoom-levels {
+        overflow: hidden; 
+    }
+    .pgina-principal .map-of-birmingham {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* Address List */
+    .pgina-principal .group-14 { 
+        top: auto;
+        position: relative;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        height: auto;
+    }
+    .pgina-principal .rectangle-10 {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        min-height: 200px;
+    }
+    .pgina-principal .gran-v-a-granada {
+        position: absolute; /* Keep absolute relative to rectangle-10 or make static */
+        top: 20px;
+        left: 20px;
+        width: calc(100% - 40px);
+        height: auto;
+        display: block;
+        text-align: center;
+    }
+    
+    /* Footer */
+    .pgina-principal .footer {
+        top: auto;
+        position: relative;
+        margin-top: 0;
+    }
+    .pgina-principal .group { /* Footer content */
+        top: auto;
+        position: relative;
+        margin-top: 0;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        height: auto;
+        padding: 40px 0;
+    }
+    
+    .pgina-principal .div,
+    .pgina-principal .img,
+    .pgina-principal .group-2,
+    .pgina-principal .frame-wrapper,
+    .pgina-principal .group-3,
+    .pgina-principal .group-4 {
+        position: relative;
+        margin: 0;
+        top: 0;
+        left: 0;
+        transform: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* Header - Mobile */
+    .pgina-principal .group-15 {
+        position: relative;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 20px;
+    }
+
+    .pgina-principal .frame-6 {
+        margin: 0;
+        margin-left: 0;
+    }
+    
+    .pgina-principal .milhojas { /* Logo Image */
+        margin: 0;
+        margin-bottom: 10px;
+    }
+
+    /* Hamburger Menu Styles */
+    .pgina-principal .hamburger-menu {
+        display: block;
+        font-size: 30px;
+        color: #ffffff;
+        cursor: pointer;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 2001;
+    }
+
+    /* Off-Canvas Nav positioning */
+    .pgina-principal .group-16.nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%; /* Hidden off-canvas */
+        left: auto !important; /* Reset desktop left */
+        width: 280px;
+        height: 100vh;
+        background-color: var(--primary-800);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 20px;
+        padding-top: 80px; /* Space for logo/close button height */
+        z-index: 2000;
+        transition: right 0.3s ease-in-out;
+        box-shadow: -5px 0 15px rgba(0,0,0,0.3);
+    }
+
+    .pgina-principal .group-16.nav-links.active {
+        right: 0; /* Slide in */
+    }
+
+    .pgina-principal .buttons-2,
+    .pgina-principal .buttons-3,
+    .pgina-principal .buttons-4 {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 80%;
         margin: 0;
     }
 
-    /* Footer vertical stack */
-    .compra-online .footer-container {
+    .pgina-principal .group-17 { /* Search bar in Header */
         position: relative;
-        top: 40px;
+        top: 0;
+        left: 0;
+        width: 80%;
+        margin-top: 20px;
+    }
+
+    /* Stacking Main Content */
+    .pgina-principal .group-13 { /* Intro text + Image */
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        margin-top: 0;
+    }
+    
+    .pgina-principal .p, 
+    .pgina-principal .text-wrapper-8 {
+        position: relative;
+        top: 0;
         left: 0;
         width: 100%;
+        white-space: normal;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .pgina-principal .image {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
+        width: 100%;
+        margin-top: 20px;
+    }
+    .pgina-principal .rectangle-5 {
+        display: none;
+    }
+
+    .pgina-principal .group-5 { /* Best Sellers */
+        margin-top: 40px;
+        padding: 0;
+        background-color: transparent; /* Remove fixed bg block if needed */
         height: auto;
+    }
+    
+    .pgina-principal .group-6 {
+        width: 100%;
+        margin: 0;
+        height: auto;
+        padding: 20px 0;
+    }
+    
+    .pgina-principal .frame-2 {
+        margin: 0 auto;
+        width: 100%;
+        text-align: center;
+    }
+    .pgina-principal .text-wrapper-4 {
+        margin: 0;
+        width: 100%;
+        text-align: center;
+        white-space: normal;
+    }
+
+    .pgina-principal .frame-3 { /* Products Scroll */
+        width: 100%;
+        margin: 0;
+        padding: 20px;
+        /* Keep horizontal scroll or change to grid? Keep scroll for now */
+    }
+
+    /* Location Section */
+    
+    
+    .pgina-principal .group-12, 
+    .pgina-principal .group-10 {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
+        width: 90%;
+        margin: 0;
+    }
+    
+    .pgina-principal .group-11 { /* Icon */
+        display: none;
+    }
+
+    
+
+    /* Map */
+    .pgina-principal .maps-full-map-wrapper {
+        width: 100%;
+        left: 0;
+        padding: 20px;
+        margin-top: 20px;
+        height: 300px;
+    }
+
+    .pgina-principal .group-9 {
+        margin-top: 40px;
+        height: auto;
+        display: flex;
         flex-direction: column;
         align-items: center;
         gap: 20px;
         padding: 20px 0;
     }
-    
-     .compra-online .f-instagram-container,
-     .compra-online .f-x-container,
-     .compra-online .f-youtube-container,
-     .compra-online .f-policy-wrapper,
-     .compra-online .f-cookies-container,
-     .compra-online .f-mateo-container {
-         position: relative;
-         margin: 5px 0;
-     }
 
+    /* Address Box */
+    .pgina-principal .group-14 {
+        width: 90%;
+        left: 5%;
+        transform: none;
+        margin-top: 20px;
+        margin-bottom: 40px;
+        height: auto;
+        position: relative;
+        background-color: var(--variable-collection-neutro-600); /* Use variable or fallback color if rect is hidden */
+        border-radius: 15px; /* Match design */
+        padding: 20px;
+    }
+    
+    .pgina-principal .rectangle-10 {
+        display: none; /* Hide the absolute rectangle, use main container bg instead */
+    }
+    
+    .pgina-principal .gran-v-a-granada {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        padding: 0;
+        text-align: center;
+        color: #ffffff; /* Ensure text is visible on dark bg */
+    }
+
+    /* Footer */
+    .pgina-principal .group {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        padding: 40px 0;
+        gap: 20px;
+        align-items: center;
+        background-color: var(--primary-900);
+        width: 100%;
+        left: 0;
+        margin-top: 0;
+    }
+    
+    .pgina-principal .div,
+    .pgina-principal .img,
+    .pgina-principal .group-2,
+    .pgina-principal .frame-wrapper,
+    .pgina-principal .group-3,
+    .pgina-principal .group-4 {
+        position: relative;
+        margin: 0;
+        top: 0;
+        left: 0;
+    }
 }
+

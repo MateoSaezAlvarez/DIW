@@ -21,8 +21,11 @@
           <div class="text-wrapper-14">Milhojas</div>
         </div>
         <img class="milhojas" src="img/milhojas-1.png" />
+        <div class="hamburger-menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
       </div>
-      <nav class="group-16">
+      <nav class="group-16 nav-links">
         <a class="buttons-2" href="index1.html" style="text-decoration: none;">
           <div class="primary-button-3">Compra online</div>
         </a>
@@ -137,6 +140,12 @@
         </div>
       </div>
     </div>
+    <div class="group-13">
+      <div class="rectangle-5"></div>
+      <img class="image" src="img/cafe.png" />
+      <p class="p">Donde las historias cobran vida</p>
+      <p class="text-wrapper-8">Ya sea solo para tomarte algo caliente, o para leer todo el día, este es tu lugar.</p>
+    </div>
     <div class="group-9">
       <div class="group-10">
         <div class="frame-4">
@@ -149,12 +158,6 @@
           <div class="text-wrapper-7">Nuestra ubicación</div>
         </div>
       </div>
-    </div>
-    <div class="group-13">
-      <div class="rectangle-5"></div>
-      <img class="image" src="img/cafe.png" />
-      <p class="p">Donde las historias cobran vida</p>
-      <p class="text-wrapper-8">Ya sea solo para tomarte algo caliente, o para leer todo el día, este es tu lugar.</p>
     </div>
     <div class="maps-full-map-wrapper">
       <div class="maps-full-map">
@@ -235,6 +238,26 @@
       </div>
     </footer>
   </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const hamburger = document.querySelector('.pgina-principal .hamburger-menu');
+      const navLinks = document.querySelector('.pgina-principal .nav-links');
+      
+      if(hamburger && navLinks) {
+        hamburger.addEventListener('click', (e) => {
+          e.stopPropagation();
+          navLinks.classList.toggle('active');
+        });
+
+        // Close menu when clicking anywhere else
+        document.addEventListener('click', (e) => {
+          if (navLinks.classList.contains('active') && !navLinks.contains(e.target) && !hamburger.contains(e.target)) {
+            navLinks.classList.remove('active');
+          }
+        });
+      }
+    });
+  </script>
 </body>
 
 </html>
