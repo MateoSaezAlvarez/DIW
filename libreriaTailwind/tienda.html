@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milhojas | Compra Online</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ribeye&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'ribeye': ['Ribeye', 'cursive'],
+                    },
+                    colors: {
+                        'mil-red': {
+                            50: '#F8DBDB',
+                            100: '#F1B6B6',
+                            200: '#E99292',
+                            300: '#E26D6D',
+                            400: '#DB4949',
+                            500: '#CF2929',
+                            600: '#A62121',
+                            700: '#7C1919',
+                            800: '#531010',
+                            900: '#290808',
+                        },
+                        'mil-green': {
+                            50: '#D8F2E3',
+                            100: '#B2E5C8',
+                            200: '#8BD8AC',
+                            300: '#64CB90',
+                            400: '#3FBD75',
+                            500: '#32965D',
+                            600: '#28784A',
+                            700: '#1E5A38',
+                            800: '#143C25',
+                            900: '#0A1E13',
+                        },
+                        'mil-neutro': {
+                            50: '#F9F3F3',
+                            100: '#F3E8E8',
+                            200: '#ECDDDD',
+                            300: '#E6D0D0',
+                            400: '#E0C5C5',
+                            500: '#DAB9B9',
+                            600: '#BE8484',
+                            700: '#9E5454',
+                            800: '#693838',
+                            900: '#351C1C',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Ribeye', cursive; }
+    </style>
+</head>
+<body class="bg-mil-red-50 text-black overflow-x-hidden">
+
+    <!-- ============================================ -->
+    <!-- HEADER: Milhojas Name and Logo              -->
+    <!-- ============================================ -->
+    <!-- Checkbox Hack for Mobile Menu (No JS) -->
+    <input type="checkbox" id="menu-toggle" class="peer hidden">
+
+    <!-- ============================================ -->
+    <!-- HEADER: Milhojas Name and Logo              -->
+    <!-- ============================================ -->
+    <header class="bg-mil-red-200 py-4 px-6 md:px-12 border-b border-mil-neutro-300 font-ribeye">
+        <div class="container mx-auto flex items-center justify-between md:justify-start lg:justify-center">
+            
+            <!-- Logo + Title Area -->
+            <div class="flex items-center space-x-4 md:space-x-8">
+                <!-- Logo -->
+                <img class="h-14 md:h-16 lg:h-20 object-contain hidden md:block" src="../img/milhojas-1.png" alt="Milhojas Logo" />
+                <!-- Name -->
+                <h1 class="text-3xl md:text-5xl text-mil-red-950">Milhojas</h1>
+            </div>
+
+            <!-- Hamburger Icon (Mobile Only) -->
+            <label for="menu-toggle" class="md:hidden text-mil-red-900 text-3xl cursor-pointer select-none py-2 px-1">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+        </div>
+    </header>
+
+    <!-- ============================================ -->
+    <!-- NAVIGATION: Menu Links and Search           -->
+    <!-- ============================================ -->
+    <!-- Content: Search left, Links right -->
+    <nav class="bg-mil-red-50 md:bg-mil-red-900 border-b border-mil-neutro-300 z-50 
+                hidden peer-checked:flex md:flex flex-col lg:flex-row 
+                items-center justify-between
+                py-6 md:py-4 lg:py-4 px-4 md:px-12
+                relative md:static shadow-lg md:shadow-none">
+        
+        <div class="container mx-auto flex flex-col md:flex-col lg:flex-row items-center justify-between gap-6">
+            
+            <!-- Left Side (Desktop): Search -->
+            <div class="order-2 lg:order-1 w-full md:w-3/4 lg:w-80">
+                <div class="relative">
+                    <input type="text" placeholder="Buscador" class="w-full bg-white border border-mil-neutro-300 rounded-md py-2 px-4 focus:outline-none focus:ring-2 focus:ring-mil-green-400 font-sans text-sm">
+                    <div class="absolute right-3 top-2.5 text-mil-neutro-400">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Side (Desktop): Links -->
+            <div class="order-1 lg:order-2 w-full lg:w-auto">
+                <ul class="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8 list-none font-ribeye">
+                    <li><a href="tienda.html" class="block w-full text-center px-6 py-2 bg-mil-green-500 text-white rounded-md hover:bg-mil-green-600 transition-colors text-sm md:text-base border-2 border-white/20">Compra online</a></li>
+                    <li><a href="index.html" class="block w-full text-center px-6 py-2 bg-mil-green-500 text-white rounded-md hover:bg-mil-green-600 transition-colors text-sm md:text-base">Librería</a></li>
+                    <li><a href="#" class="block w-full text-center px-6 py-2 bg-mil-green-500 text-white rounded-md hover:bg-mil-green-600 transition-colors text-sm md:text-base">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mx-auto px-4 py-12">
+        <div class="flex flex-col lg:flex-row gap-10">
+            
+            <!-- ============================================ -->
+            <!-- SIDEBAR: Categorías (Checkbox list)         -->
+            <!-- ============================================ -->
+            <aside class="w-full lg:w-1/4">
+                <div class="bg-mil-red-100 rounded-xl p-8 border-2 border-mil-neutro-200 sticky top-24">
+                    <div class="bg-mil-red-400 py-3 px-6 rounded-md mb-8 shadow-md">
+                        <h3 class="text-xl md:text-2xl text-white text-center">Categorias</h3>
+                    </div>
+                    
+                    <ul class="space-y-6">
+                        <li class="flex items-center justify-between group cursor-pointer">
+                            <span class="text-xl text-mil-red-800">Cómics</span>
+                            <i class="fa-regular fa-square text-2xl text-mil-green-500 group-hover:text-mil-green-600"></i>
+                        </li>
+                        <li class="flex items-center justify-between group cursor-pointer">
+                            <span class="text-xl text-mil-red-800">Café</span>
+                            <i class="fa-regular fa-square text-2xl text-mil-green-500 group-hover:text-mil-green-600"></i>
+                        </li>
+                        <li class="flex items-center justify-between group cursor-pointer">
+                            <span class="text-xl text-mil-red-800">Mangas</span>
+                            <i class="fa-regular fa-square text-2xl text-mil-green-500 group-hover:text-mil-green-600"></i>
+                        </li>
+                        <li class="flex items-center justify-between group cursor-pointer">
+                            <span class="text-xl text-mil-red-800">Comida</span>
+                            <i class="fa-regular fa-square text-2xl text-mil-green-500 group-hover:text-mil-green-600"></i>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+
+            <!-- ============================================ -->
+            <!-- PRODUCT GRID: Massive 4 Column Display      -->
+            <!-- ============================================ -->
+            <section class="w-full lg:w-3/4">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 lg:gap-8">
+                    
+                    <!-- Card 1: Berserk -->
+                    <article class="bg-mil-neutro-100 rounded-xl shadow-lg border border-mil-neutro-200 overflow-hidden flex flex-col items-center p-4">
+                        <img src="../img/berserk.png" alt="Berserk" class="w-full h-48 object-cover rounded-md mb-4">
+                        <h4 class="text-xl text-black mb-1">Berserk</h4>
+                        <p class="text-sm text-mil-neutro-600 mb-2">Kentaro Miura</p>
+                        <div class="text-2xl text-orange-400 font-bold mb-6">16€</div>
+                        <button class="w-full py-3 bg-mil-green-500 text-white rounded-md hover:bg-mil-green-600 transition-shadow">Añadir al carrito</button>
+                    </article>
+
+                    <!-- Card 2: V de Vendetta -->
+                    <article class="bg-mil-neutro-100 rounded-xl shadow-lg border border-mil-neutro-200 overflow-hidden flex flex-col items-center p-4">
+                        <img src="../img/v-de-vendetta.png" alt="V" class="w-full h-48 object-cover rounded-md mb-4">
+                        <h4 class="text-xl text-black mb-1">V de Vendetta</h4>
+                        <p class="text-sm text-mil-neutro-600 mb-2">Alan Moore</p>
+                        <div class="text-2xl text-orange-400 font-bold mb-6">7€</div>
+                        <button class="w-full py-3 bg-mil-green-500 text-white rounded-md hover:bg-mil-green-600 transition-shadow">Añadir al carrito</button>
+                    </article>
+
+                    <!-- Card 3: Metal Gear -->
+                    <article class="bg-mil-neutro-100 rounded-xl shadow-lg border border-mil-neutro-200 overflow-hidden flex flex-col items-center p-4 text-center">
+                        <img src="../img/metal-gear-solid.png" alt="MGS" class="w-full h-48 object-cover rounded-md mb-4">
+                        <h4 class="text-xl text-black mb-1 leading-tight">Metal Gear Solid: Cómic Oficial</h4>
+                        <p class="text-sm text-mil-neutro-600 mb-2">Kris Oprisko</p>
+                        <div class="text-2xl text-orange-400 font-bold mb-6">8€</div>
+                        <button class="w-full py-3 bg-mil-green-500 text-white rounded-md hover:bg-mil-green-600 transition-shadow">Añadir al carrito</button>
+                    </article>
+
+                    <!-- Card 4: Steel Ball Run -->
+                    <article class="bg-mil-neutro-100 rounded-xl shadow-lg border border-mil-neutro-200 overflow-hidden flex flex-col items-center p-4 text-center">
+                        <img src="../img/steel-ball-run.png" alt="SBR" class="w-full h-48 object-cover rounded-md mb-4">
+                        <h4 class="text-xl text-black mb-1 leading-tight">Steel Ball Run</h4>
+                        <p class="text-sm text-mil-neutro-600 mb-2">Hirohiko Araki</p>
+                        <div class="text-2xl text-orange-400 font-bold mb-6">12€</div>
+                        <button class="w-full py-3 bg-mil-green-500 text-white rounded-md hover:bg-mil-green-600 transition-shadow">Añadir al carrito</button>
+                    </article>
+
+                    <!-- Card 5: Chainsaw Man -->
+                    <article class="bg-mil-neutro-100 rounded-xl shadow-lg border border-mil-neutro-200 overflow-hidden flex flex-col items-center p-4">
+                        <img src="../img/chainsaw-man.png" alt="CSM" class="w-full h-48 object-cover rounded-md mb-4">
+                        <h4 class="text-xl text-black mb-1">Chainsaw Man</h4>
+                        <p class="text-sm text-mil-neutro-600 mb-2">Tatsuki Fujimoto</p>
+                        <div class="text-2xl text-orange-400 font-bold mb-6">10€</div>
+                        <button class="w-full py-3 bg-mil-green-500 text-white rounded-md hover:bg-mil-green-600 transition-shadow">Añadir al carrito</button>
+                    </article>
+
+                    <!-- Card 6: Cafe -->
+                    <article class="bg-mil-neutro-100 rounded-xl shadow-lg border border-mil-neutro-200 overflow-hidden flex flex-col items-center p-4 text-center">
+                        <img src="../img/cafe-espresso.png" alt="Cafe" class="w-full h-48 object-cover rounded-md mb-4 border border-mil-neutro-200">
+                        <h4 class="text-xl text-black mb-1 leading-tight">Café espresso</h4>
+                        <p class="text-sm text-mil-neutro-600 mb-2">Una carga de cafeína para despertar</p>
+                        <div class="text-2xl text-orange-400 font-bold mb-6">1€</div>
+                        <button class="w-full py-3 bg-mil-green-500 text-white rounded-md hover:bg-mil-green-600 transition-shadow">Añadir al carrito</button>
+                    </article>
+
+                    <!-- Card 7: FMA -->
+                    <article class="bg-mil-neutro-100 rounded-xl shadow-lg border border-mil-neutro-200 overflow-hidden flex flex-col items-center p-4">
+                        <img src="../img/fullmetal-alchemist.png" alt="FMA" class="w-full h-48 object-cover rounded-md mb-4">
+                        <h4 class="text-xl text-black mb-1">Fullmetal Alchemist</h4>
+                        <p class="text-sm text-mil-neutro-600 mb-2">Hiromu Arakawa</p>
+                        <div class="text-2xl text-orange-400 font-bold mb-6">8€</div>
+                        <button class="w-full py-3 bg-mil-green-500 text-white rounded-md hover:bg-mil-green-600 transition-shadow">Añadir al carrito</button>
+                    </article>
+
+                    <!-- Card 8: Newey -->
+                    <article class="bg-mil-neutro-100 rounded-xl shadow-lg border border-mil-neutro-200 overflow-hidden flex flex-col items-center p-4 text-center">
+                        <img src="../img/adrian-newey.png" alt="Newey" class="w-full h-48 object-cover rounded-md mb-4">
+                        <h4 class="text-xl text-black mb-1 leading-tight">Cómo hacer un coche</h4>
+                        <p class="text-sm text-mil-neutro-600 mb-2">Adrian Newey</p>
+                        <div class="text-2xl text-orange-400 font-bold mb-6">40€</div>
+                        <button class="w-full py-3 bg-mil-green-500 text-white rounded-md hover:bg-mil-green-600 transition-shadow">Añadir al carrito</button>
+                    </article>
+
+                    <!-- Card 9: Maus -->
+                    <article class="bg-mil-neutro-100 rounded-xl shadow-lg border border-mil-neutro-200 overflow-hidden flex flex-col items-center p-4">
+                        <img src="../img/maus.png" alt="Maus" class="w-full h-48 object-cover rounded-md mb-4">
+                        <h4 class="text-xl text-black mb-1">Maus</h4>
+                        <p class="text-sm text-mil-neutro-600 mb-2">Art Spiegelman</p>
+                        <div class="text-2xl text-orange-400 font-bold mb-6">15€</div>
+                        <button class="w-full py-3 bg-mil-green-500 text-white rounded-md hover:bg-mil-green-600 transition-shadow">Añadir al carrito</button>
+                    </article>
+
+                    <!-- Card 10: Chocolate -->
+                    <article class="bg-mil-neutro-100 rounded-xl shadow-lg border border-mil-neutro-200 overflow-hidden flex flex-col items-center p-4 text-center">
+                        <img src="../img/chocolate-caliente.png" alt="Chocolate" class="w-full h-48 object-cover rounded-md mb-4">
+                        <h4 class="text-xl text-black mb-1 leading-tight">Chocolate Caliente</h4>
+                        <p class="text-sm text-mil-neutro-600 mb-2">La mejor combinación junto a una fogata</p>
+                        <div class="text-2xl text-orange-400 font-bold mb-6">1.5€</div>
+                        <button class="w-full py-3 bg-mil-green-500 text-white rounded-md hover:bg-mil-green-600 transition-shadow">Añadir al carrito</button>
+                    </article>
+
+                    <!-- Card 11: Invincible -->
+                    <article class="bg-mil-neutro-100 rounded-xl shadow-lg border border-mil-neutro-200 overflow-hidden flex flex-col items-center p-4 text-center">
+                        <img src="../img/invincible.png" alt="Invincible" class="w-full h-48 object-cover rounded-md mb-4">
+                        <h4 class="text-xl text-black mb-1 leading-tight">Invincible</h4>
+                        <p class="text-sm text-mil-neutro-600 mb-2">Robert Kirkman</p>
+                        <div class="text-2xl text-orange-400 font-bold mb-6">6€</div>
+                        <button class="w-full py-3 bg-mil-green-500 text-white rounded-md hover:bg-mil-green-600 transition-shadow">Añadir al carrito</button>
+                    </article>
+
+                    <!-- Card 12: Croissant -->
+                    <article class="bg-mil-neutro-100 rounded-xl shadow-lg border border-mil-neutro-200 overflow-hidden flex flex-col items-center p-4 text-center text-sm">
+                        <img src="../img/croissant.png" alt="Croissant" class="w-full h-48 object-cover rounded-md mb-4 border border-mil-neutro-200">
+                        <h4 class="text-xl text-black mb-1 leading-tight">Croissant con jamón y queso</h4>
+                        <p class="text-sm text-mil-neutro-600 mb-2">Perfecto para acompañar las lecturas.</p>
+                        <div class="text-2xl text-orange-400 font-bold mb-6">2.2€</div>
+                        <button class="w-full py-3 bg-mil-green-500 text-white rounded-md hover:bg-mil-green-600 transition-shadow">Añadir al carrito</button>
+                    </article>
+
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- ============================================ -->
+    <!-- FOOTER: Milhojas Signature                  -->
+    <!-- ============================================ -->
+    <footer class="bg-mil-red-900 py-12 text-mil-neutro-500">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 items-center md:items-start text-center md:text-left gap-12">
+                
+                <!-- Columna 1: Enlaces de interés -->
+                <div class="space-y-4">
+                    <h5 class="text-white text-lg font-bold mb-4 font-ribeye">Información</h5>
+                    <ul class="space-y-2 text-sm font-sans">
+                        <li><a href="#" class="hover:text-white transition-colors">política de datos</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">cookies</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">quiénes somos</a></li>
+                    </ul>
+                </div>
+
+                <!-- Columna 2: Copyright -->
+                <div class="flex flex-col items-center justify-center space-y-4">
+                    <div class="text-2xl text-mil-red-100 font-ribeye">Milhojas</div>
+                    <p class="text-[10px] uppercase tracking-widest text-mil-red-300 font-sans">© 2024 Mateo - Todos los derechos reservados</p>
+                </div>
+
+                <!-- Columna 3: Redes Sociales -->
+                <div class="flex flex-col items-center md:items-end space-y-4">
+                    <h5 class="text-white text-lg font-bold mb-4 font-ribeye">Síguenos</h5>
+                    <div class="flex space-x-6">
+                        <a href="#" class="w-10 h-10 bg-mil-neutro-500 rounded-full flex items-center justify-center text-mil-red-900 hover:scale-110 transition-transform">
+                            <i class="fa-brands fa-instagram text-lg"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-mil-neutro-500 rounded-full flex items-center justify-center text-mil-red-900 hover:scale-110 transition-transform">
+                            <i class="fa-brands fa-x-twitter text-lg"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-mil-neutro-500 rounded-full flex items-center justify-center text-mil-red-900 hover:scale-110 transition-transform">
+                            <i class="fa-brands fa-youtube text-lg"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- Removing JavaScript library logic as per request -->
+</body>
+</html>

@@ -1985,141 +1985,7 @@
   color: #e0e0e0;
 }
 
-.compra-online .f-footer-container {
-  display: flex;
-  width: 100%;
-  height: 83px;
-  background-color: var(--primary-900);
-  margin-top: 1024px; /* Default placement below main content */
-  position: relative;
-  align-items: center;
-}
 
-/* Replicate the spacing and look of the original footer */
-.compra-online .f-instagram-container,
-.compra-online .f-x-container,
-.compra-online .f-youtube-container {
-  margin-top: 13px;
-  width: 48px;
-  height: 56px;
-  position: relative;
-  margin-left: 60px;
-}
-
-/* The first one has a larger margin-left in the original (315px) */
-.compra-online .f-instagram-container {
-  margin-left: 315px;
-}
-
-.compra-online .f-ellipse {
-  position: absolute;
-  top: 6px;
-  left: 3px;
-  width: 42px;
-  height: 41px;
-  background-color: var(--variable-collection-neutro-500);
-  border-radius: 21px / 20.5px;
-}
-
-.compra-online .f-icon-frame {
-  display: flex;
-  flex-direction: column;
-  width: 48px;
-  align-items: center;
-  justify-content: center;
-  gap: 16px;
-  padding: 16px;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.compra-online .f-policy-wrapper {
-  margin-top: 25px;
-  width: 85px;
-  margin-left: 153px;
-  display: flex;
-  background-color: var(--variable-collection-neutro-500);
-}
-
-.compra-online .f-policy-inner {
-  display: inline-flex;
-  width: 62px;
-  height: 34px;
-  margin-left: 15px;
-  position: relative;
-  align-items: center;
-  justify-content: center;
-  gap: 16px;
-}
-
-.compra-online .f-text-policy {
-  position: relative;
-  width: 62px;
-  margin-top: -1px;
-  font-family: var(--caption-font-family);
-  font-weight: var(--caption-font-weight);
-  color: #474646;
-  font-size: var(--caption-font-size);
-  letter-spacing: var(--caption-letter-spacing);
-  line-height: var(--caption-line-height);
-  font-style: var(--caption-font-style);
-}
-
-.compra-online .f-cookies-container {
-  margin-top: 25px;
-  width: 86px;
-  height: 34px;
-  position: relative;
-  margin-left: 24px;
-}
-
-.compra-online .f-rectangle {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 84px;
-  height: 34px;
-  background-color: var(--variable-collection-neutro-500);
-}
-
-.compra-online .f-text-cookies {
-  position: absolute;
-  top: 7px;
-  left: 17px;
-  width: 52px;
-  font-family: var(--small-body-font-family);
-  font-weight: var(--small-body-font-weight);
-  color: #474646;
-  font-size: var(--small-body-font-size);
-  letter-spacing: var(--small-body-letter-spacing);
-  line-height: var(--small-body-line-height);
-  white-space: nowrap;
-  font-style: var(--small-body-font-style);
-}
-
-.compra-online .f-mateo-container {
-  margin-top: 25px;
-  width: 86px;
-  height: 34px;
-  position: relative;
-  margin-left: 240px;
-}
-
-.compra-online .f-text-mateo {
-  position: absolute;
-  top: 7px;
-  left: 17px;
-  width: 59px;
-  font-family: var(--small-body-font-family);
-  font-weight: var(--small-body-font-weight);
-  color: #474646;
-  font-size: var(--small-body-font-size);
-  letter-spacing: var(--small-body-letter-spacing);
-  line-height: var(--small-body-line-height);
-  white-space: nowrap;
-  font-style: var(--small-body-font-style);
-}
 
 /* Hamburger Menu Styles */
 .hamburger-menu {
@@ -2138,8 +2004,8 @@
 /* --- Validated Footer Styles for Compra Online --- */
 
 .compra-online .footer-group {
-    position: absolute;
-    top: 900px;
+    position: relative;
+    top: 950px;
     left: 0;
     width: 100%;
     height: 83px;
@@ -2471,7 +2337,7 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
     /* Header - Mobile (Mirroring Landing Page Style) */
     .compra-online .group-15 {
         position: relative;
@@ -2897,7 +2763,7 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
     /* Header - Mobile */
     .pgina-principal .group-15 {
         position: relative;
@@ -3106,7 +2972,7 @@
     /* Footer */
     .pgina-principal .group {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         height: auto;
         padding: 40px 0;
         gap: 20px;
@@ -3128,5 +2994,4 @@
         top: 0;
         left: 0;
     }
-}
-
+} 
